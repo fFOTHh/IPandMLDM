@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>KorolevBio</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- main style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+<script src="js/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <nav role="navigation" class="navbar navbar-inverse"> 
+          <div class="container">
+
+            <div class="navbar-header header">
+              <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-12">
+                 <h1><a href="#">KorolevBio</a></h1>
+                    <p>Платформа для ознакомления с информацией!  </p>
+                   
+                  </div>
+
+                </div>
+              </div>
+
+
+              <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+              <ul class="nav nav-pills">
+                <li ><a href="index.html">Главная</a></li>
+                <li ><a href="author.html">Об авторе</a></li>
+                <li><a href="hobby.html">Хобби</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                              <li class="active" ><a href="gallery.html">Галлерея</a></li>
+              </ul>
+
+
+            </div>
+
+          </div>
+
+
+    </naw>
+
+      </div>
+
+  </div>
+
+	<div class="wrap">
+		<h1>Галлерея</h1>
+		<div class="gallery" data-setting="setup1">
+			<div class="slider">
+				<div class="stage">
+					<div>
+						<img src="image/gallery/img_01.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_02.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_03.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_04.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_05.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_06.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_07.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_08.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_09.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_10.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_11.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_12.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_13.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_14.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_15.jpg" alt="">
+					</div>
+					<div>
+						<img src="image/gallery/img_16.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="control">
+				<div class="nav-ctrl" data-hidden="true">
+					<span class="prev" data-shift="prev">prev</span>
+					<span class="next" data-shift="next">next</span>
+				</div>
+				<ul class="dots-ctrl" data-hidden="true"></ul>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		const setting = {
+			setup1: {
+				// включаем постраничную навигацию
+				dots: true,
+				// включаем управление с клавиатуры клавишами навигации "вправо / влево"
+				keyControl: true,
+				// настройки галереи в зависимости от разрешения
+				adaptive: {
+					// настройка работает в диапазоне разрешений 320-560px
+					320: {
+						// одновременно выводится 1 элемент
+						visibleItems: 1,
+						// расстояние между изображениями 5px
+						margin: 5,
+						// запрещаем постраничную навигацию
+						dots: false
+					},
+					// настройка работает в диапазоне разрешений 560-768px
+					560: {
+						// одновременно выводится 1 элемент
+						visibleItems: 2,
+						// расстояние между изображениями 5px
+						margin: 5,
+						// запрещаем постраничную навигацию
+						dots: false
+					},
+					// настройка работает в диапазоне разрешений 768-1024px
+					768: {
+						// одновременно выводятся 2 элемента
+						visibleItems: 3,
+					},
+					// настройка работает в диапазоне разрешений 1024 и выше
+					1024: {
+						// одновременно выводятся 3 элемента
+						visibleItems: 4
+					}
+				}
+			},
+			setup2: {
+				// одновременно выводится 4 элемента
+				visibleItems: 4,
+				// разрешаем постраничную навигацию
+				dots: true,
+				// разрешаем управление с клавиатуры клавишами навигации "вправо / влево"
+				keyControl: true,
+				// выключаем адаптивность
+				responsive: false
+			}
+		};
+	</script>
+	<script src="js/gallery.js"></script>
+  
+
+
+
+</div>
+</div>
+
+
+<footer>
+
+<div class="container">
+<p class="text-center"><a href="https://www.ulstu.ru/">Сайт сделан студентом УЛГТУ Королевым Алексеем</a></p>
+</div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
