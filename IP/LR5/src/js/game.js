@@ -8,32 +8,6 @@ function randomInteger(min, max) {
 }
 
 function gameOver() {
-    $.ajax({
-        success(data) {
-
-            $('.results').html(` <tr>
-                <th>№</th>
-                <th>Имя игрока</th>
-                <th>Уровень</th>
-                <th>Очки</th>
-            </tr>`);
-
-            let key = 1;
-            let res = data;
-            res.forEach((item) => {
-                $('.results').append(`
-                     <tr>
-                        <td>${key}</td>
-                        <td>${item.name}</td>
-                        <td>${item.level}</td>
-                        <td>${item.points}</td>
-                     </tr>
-                `)
-                key += 1;
-            })
-        }
-    });
-
     const data = {
         name: player.name,
         points: points,
@@ -50,7 +24,7 @@ function gameOver() {
 }
 
 /*
-    Restart Game
+    Restart Game 
  */
 
 function next() {
