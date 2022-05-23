@@ -21,6 +21,12 @@ var game = {
 			} else if ( e.keyCode == 39 ) {
 				game.Platform.dx = game.Platform.velocity;
 			}
+			else if ( e.keyCode == 38 ) {
+				game.Platform.dy = -game.Platform.velocity;
+			}
+			else if ( e.keyCode == 40 ) {
+				game.Platform.dy = game.Platform.velocity;
+			}
 		});
 		window.addEventListener('keyup', function(e){
 			game.Platform.stop();
@@ -54,7 +60,7 @@ var game = {
 			this.ball.move();
 		}
 
-		if( this.Platform.dx ) {
+		if(( this.Platform.dx ) || ( this.Platform.dy )) {
 			this.Platform.move();
 		}
 
@@ -187,16 +193,20 @@ game.Platform = {
 	ball: game.ball,
 	stop: function(){
 		this.dx = 0;
+		this.dy = 0;
 
 		if ( this.ball ) {
 			this.ball.dx = 0;
+			this.ball.dy = 0;
 		}
 	},
 	move: function(){
 		this.x += this.dx;
+		this.y += this.dy;
 
 		if ( this.ball ) {
 			this.ball.x += this.dx;
+			this.ball.y += this.dy;
 		}
 	},
 	releaseBall: function(){
